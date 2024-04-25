@@ -11,8 +11,8 @@ import { IOperator } from "@/interfaces-types/const";
 
 const Operator: FC<IOperator> = ({ id, name, img, slug }) => {
   return (
-    <StyledLink href={`/payment/${slug}`} datatype={name}>
-      <OperatorWraper key={id}>
+    <StyledLink href={`/payment/${slug}`} datatype={name} key={id}>
+      <OperatorWraper>
         <OperatorImg src={img} alt="#" />
         <DescriptionWrapper>
           <OperatorTitle>{name}</OperatorTitle>
