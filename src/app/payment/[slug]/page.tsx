@@ -2,7 +2,9 @@ import PaymentForm from "@/components/PaymentForm/PaymentForm";
 import { notFound } from "next/navigation";
 
 async function getData(slug: string) {
-  const req = await fetch(process.env.DB_HOST + `/api/operators/${slug}`);
+  const req = await fetch(process.env.DB_HOST + `/api/operators/${slug}`, {
+    cache: "no-store",
+  });
   if (req.status === 404) {
     notFound();
   } else {
