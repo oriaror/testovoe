@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "MTS",
+    "img": "/img/mts.png",
+    "slug": "mts"
+  },
+  {
+    "id": 2,
+    "name": "Megafon",
+    "img": "/img/megafon.png",
+    "slug": "megafon"
+  },
+  {
+    "id": 3,
+    "name": "Beeline",
+    "img": "/img/beeline.png",
+    "slug": "beeline"
+  }
+]
