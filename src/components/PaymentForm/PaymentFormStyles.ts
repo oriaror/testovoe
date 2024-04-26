@@ -15,7 +15,7 @@ const FormWrapper = styled.form`
   gap: 2rem;
 `
 
-const ButtonPay = styled.button`
+const ButtonPay = styled.button` 
   border-radius: 6px;
   color: #000000;
   height: 42px;
@@ -25,6 +25,11 @@ const ButtonPay = styled.button`
   background: rgb(0, 0, 0);
   color: white;
   transition-duration: 0.4s;
+  @media (max-width: 900px){
+    &:active {
+      background-color: #000000;
+    }
+  }
 }
 `
 
