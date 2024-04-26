@@ -17,7 +17,10 @@ export default async function PaymentScreen({
 }: {
   params: { slug: string };
 }) {
-  const data = await getData(params.slug);
-
-  return <PaymentForm name={data.name} />;
+  try {
+    const data = await getData(params.slug);
+    return <PaymentForm name={data.name} />;
+  } catch (error) {
+    console.log(error);
+  }
 }
