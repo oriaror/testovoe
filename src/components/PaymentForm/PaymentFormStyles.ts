@@ -25,11 +25,6 @@ const ButtonPay = styled.button`
   background: rgb(0, 0, 0);
   color: white;
   transition-duration: 0.4s;
-  @media (max-width: 900px){
-    &:active {
-      background-color: #000000;
-    }
-  }
 }
 `
 
