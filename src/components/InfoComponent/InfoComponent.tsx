@@ -8,6 +8,7 @@ import {
   StyledLoader,
   StyledResImg,
   StyledText,
+  StyledWrapper,
 } from "./InfoStyled";
 import { useRouter } from "next/navigation";
 import checked from "../../../public/img/checked.png";
@@ -42,19 +43,21 @@ const InfoComponent = ({ response, onClear, loading, setLoading }: any) => {
       <StyledInfo>
         After successful payment you will be redirected to the main page
       </StyledInfo>
-      {loading ? (
-        <StyledLoader></StyledLoader>
-      ) : response === true ? (
-        <>
-          <StyledResImg src={checked.src} />{" "}
-          <StyledText>Payment received</StyledText>
-        </>
-      ) : null || response === false ? (
-        <>
-          <StyledResImg src={cancel.src} />
-          <StyledText>Try again later</StyledText>{" "}
-        </>
-      ) : null}
+      <StyledWrapper>
+        {loading ? (
+          <StyledLoader></StyledLoader>
+        ) : response === true ? (
+          <>
+            <StyledResImg src={checked.src} />{" "}
+            <StyledText>Payment received</StyledText>
+          </>
+        ) : null || response === false ? (
+          <>
+            <StyledResImg src={cancel.src} />
+            <StyledText>Try again later</StyledText>{" "}
+          </>
+        ) : null}
+      </StyledWrapper>
     </Info>
   );
 };

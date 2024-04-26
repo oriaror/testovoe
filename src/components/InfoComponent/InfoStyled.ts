@@ -74,11 +74,10 @@ const StyledLoader = styled.div`
   }
 } `
 
-// const StyledFail = styled.p`
-//   font-family: "Reem Kufi", sans-serif;
-//    color: #ff0000;
-//    font-size: 24px;
-//  `
+const StyledWrapper = styled.div`
+  padding-top: 50px;
+`
+
 const StyledText = styled.p`
    font-family: "Reem Kufi", sans-serif;
    color: rgb(255, 255, 255);
@@ -96,4 +95,4 @@ const StyledResImg = styled.img`
 `
 
 
-export { Info, StyledInstruction, StyledInfo, StyledLoader, StyledResImg, StyledBalance, StyledText }
+export { Info, StyledInstruction, StyledInfo, StyledLoader, StyledResImg, StyledBalance, StyledText, StyledWrapper }
