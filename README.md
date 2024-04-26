@@ -1,7 +1,7 @@
 deploy : https://testovoe-woad.vercel.app/
 
 Задача на рефакторинг:
-
+//js
 function func(string, a, b) {
   let aIndex = -1;
   let bIndex = -1;
@@ -15,3 +15,4 @@ function func(string, a, b) {
     }
   }
   return Math.max(aIndex, bIndex);
+//js
