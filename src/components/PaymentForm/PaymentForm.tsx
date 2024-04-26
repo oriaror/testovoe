@@ -23,7 +23,11 @@ const PaymentForm = ({ name }: IPaymentForm) => {
   const onClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setLoading(true);
-    res();
+    try {
+      res();
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
