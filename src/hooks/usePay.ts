@@ -6,7 +6,7 @@ export const usePay = (formData: TFormData) => {
 
   const res = async () => {
     setResponse(null);
-    const resp = await fetch("http://localhost:3000/api/pay", {
+    const resp = await fetch("/api/pay", {
       method: "POST",
       body: JSON.stringify(formData),
     });
