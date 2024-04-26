@@ -48,7 +48,7 @@ const OperatorWraper = styled.li`
   background-color: #ffffff;
   font-size: 24px;
   font-family: "Reem Kufi", sans-serif;
-  box-shadow: 10px 5px 5px #000000;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.4);
   transition: 250ms;
   &:hover ${OperatorImg} {
     transition: 250ms;

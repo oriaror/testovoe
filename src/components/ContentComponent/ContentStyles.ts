@@ -12,8 +12,9 @@ const ContentWrapper = styled.ul`
   gap: 24px;
   margin: 0 auto;
   @media (max-width: 1028px){
+    padding-bottom: 25px;
     display: grid;
-      grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 `
 const Paragr = styled.h2`

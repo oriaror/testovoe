@@ -59,6 +59,7 @@ const ContentFormWrapper = styled.div`
   margin: 10%;
   @media (max-width: 900px){
     flex-direction: column;
+    padding-bottom: 25px;
   }
 `
 
