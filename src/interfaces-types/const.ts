@@ -21,7 +21,8 @@ export const makeInit = (): TFormData => {
 
 
 export interface InfoComponent {
-  response: boolean;
+  pay: string;
+  response: boolean | null;
   onClear: () => void;
   loading: boolean;
   setLoading: () => void;
