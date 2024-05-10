@@ -13,8 +13,14 @@ import {
 import { useRouter } from "next/navigation";
 import checked from "../../../public/img/checked.png";
 import cancel from "../../../public/img/cancel.png";
+import { InfoComponent } from "@/interfaces-types/const";
 
-const InfoComponent = ({ response, onClear, loading, setLoading }: any) => {
+const InfoComponent = ({
+  response,
+  onClear,
+  loading,
+  setLoading,
+}: InfoComponent) => {
   const router = useRouter();
   useEffect(() => {
     if (response == null) {

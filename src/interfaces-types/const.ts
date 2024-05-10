@@ -19,6 +19,14 @@ export const makeInit = (): TFormData => {
   };
 };
 
+
+export interface InfoComponent {
+  response: boolean;
+  onClear: () => void;
+  loading: boolean;
+  setLoading: () => void;
+}
+
 export interface IPayInput {
   pay: string,
   handleOnChangePay: (e: React.ChangeEvent<HTMLInputElement>) => void,
