@@ -46,12 +46,3 @@ export interface IOperator {
   img: string;
   slug: string;
 }
-
-export interface IResponseModal {
-  phone: string;
-  pay: string;
-  setModalShow: () => void;
-  name: string;
-  response: boolean | null;
-  onClear: () => void;
-}
