@@ -16,7 +16,6 @@ import cancel from "../../../public/img/cancel.png";
 import { InfoComponent } from "@/interfaces-types/const";
 
 const InfoComponent = ({
-  pay,
   response,
   onClear,
   loading,
